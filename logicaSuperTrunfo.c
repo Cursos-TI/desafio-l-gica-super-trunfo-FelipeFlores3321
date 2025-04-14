@@ -139,17 +139,69 @@ printf("\nDensidade Populacional: %.2f \n------------------------\n", densiB01);
 printf("\nSuper Poder: %.0f \n------------------------\n", superpoderB01); 
 
 
-printf("Vamos comparar cartas! \n");
-printf("Se %s venceu, o resultado será 1! \n", codigocartaA01);
-printf("Se %s venceu, o resultado será 0! \n", codigocartaB01);
+printf("Vamos comparar cartas e ver quem venceu! \n");
 
-printf("---------------------------------------------------------------------------------------------------\n%");
-printf("População: %s(%li milhões) vs %s(%li milhões): %li \n",codigocartaA01,populacaoA01, codigocartaB01, populacaoB01, populacaoA01 > populacaoB01 );
-printf("Área: %s(%.3f Kms) vs %s(%.3f Kms): %i \n", codigocartaA01, areaA01,codigocartaB01, areaB01, areaA01 > areaB01);
-printf("PIB: %s(%.2f bilhões $Rs) vs %s(%.2f $Rs): %i \n", codigocartaA01, PIBA01, codigocartaB01,PIBB01, PIBA01 > PIBB01);
-printf("Pontos Turísticos: %s(%i Pontos Turísticos) vs %s(%i Pontos Turísticos): %i \n", codigocartaA01, pturisticoA01, codigocartaB01, pturisticoB01, pturisticoA01 > pturisticoB01);
-printf("Pib Per Capita: %s(%.2f R$s per capita) vs %s(%.2f R$s per capita): %i\n", codigocartaA01, codigocartaB01, pibpercapitaA01 > pibpercapitaB01);
-printf("Densidade populacional: %s(%.2f por Km) vs %s(%.2f por Km): %i \n",codigocartaA01, densiA01, codigocartaB01,densiB01, densiA01 < densiB01);
-printf("Super Poder: %s(%.0f pontos!) vs %s(%.0f pontos!): %i \n", codigocartaA01,superpoderA01, codigocartaB01, superpoderB01, superpoderA01 > superpoderB01);
-printf("---------------------------------------------------------------------------------------------------\n%");
+printf("---------------------------------------------------------------------------------------------------\n");
+
+printf("Quem venceu em população? \n");
+if(populacaoA01 > populacaoB01){
+    printf("%s venceu! \n", codigocartaA01);
+} else {
+    printf("%s venceu! \n", codigocartaB01);
+}
+
+printf("---------------------------------------------------------------------------------------------------\n");
+
+printf("Quem venceu em área? \n");
+if(areaA01 > areaB01){
+    printf("%s venceu! \n", codigocartaA01);
+} else{
+    printf("%s venceu! \n", codigocartaB01);
+}
+
+printf("---------------------------------------------------------------------------------------------------\n");
+
+printf("Quem venceu em PIB? \n");
+if(PIBA01 > PIBB01){
+    printf("%s venceu! \n", codigocartaA01);
+} else{
+    printf("%s venceu! \n", codigocartaB01);
+}
+
+printf("---------------------------------------------------------------------------------------------------\n");
+
+printf("Quem venceu em pontos turísticos? \n");
+if(pturisticoA01 > pturisticoB01){
+    printf("%s venceu! \n", codigocartaA01);
+} else{
+    printf("%s venceu! \n", codigocartaB01);
+}
+
+printf("---------------------------------------------------------------------------------------------------\n");
+
+printf("Quem venceu em Pib per capita ? \n");
+if(pibpercapitaA01 > pibpercapitaB01){
+    printf("%s venceu! \n", codigocartaA01);
+} else{
+    printf("%s venceu! \n", codigocartaB01);
+}
+
+printf("---------------------------------------------------------------------------------------------------\n");
+
+printf("Quem venceu em densidade? \n");
+if(densiA01 < densiB01){
+    printf("%s venceu! \n", codigocartaA01);
+} else{
+    printf("%s venceu! \n", codigocartaB01);
+}
+
+printf("---------------------------------------------------------------------------------------------------\n");
+printf("Quem venceu no super poder? \n");
+if(superpoderA01 > superpoderB01){
+    printf("%s venceu! \n", codigocartaA01);
+} else{
+    printf("%s venceu! \n", codigocartaB01);
+}
+
+printf("---------------------------------------------------------------------------------------------------\n");
 }
